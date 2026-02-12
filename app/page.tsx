@@ -6,7 +6,7 @@ export default function Home() {
       {/* Blue Frame */}
       <div className="min-h-[calc(100vh-2rem)] rounded-3xl" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
         {/* Header/Navigation */}
-        <header className="flex items-center justify-between px-10 py-6 max-w-7xl mx-auto">
+        <header className="flex items-center justify-between px-10 py-6 max-w-full mx-auto">
           <div className="text-2xl font-bold text-white">Vircads</div>
           <nav className="flex items-center gap-8">
             <a href="#about" className="text-white hover:text-blue-100 transition-colors">
@@ -25,7 +25,7 @@ export default function Home() {
         </header>
 
         {/* Main Content */}
-        <main className="max-w-7xl mx-auto px-10 py-12">
+        <main className="max-w-full mx-auto px-10 py-12">
           <div className="flex items-center gap-12">
             {/* Left Content */}
             <div className="w-[40%]">
@@ -68,23 +68,38 @@ export default function Home() {
 
       {/* Academic Origin Section */}
       <section className="max-w-full mx-auto px-4 py-10">
-        <div className="flex items-center gap-4">
-          {/* Text Card */}
-          <div className="flex-1 bg-gray-100 rounded-2xl p-8">
+        <div className="flex items-stretch gap-4">
+          {/* Left Text Card - 50% */}
+          <div className="w-1/2 bg-gray-100 rounded-2xl p-8 flex flex-col justify-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Academic Origin and Contributors</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
               This project was developed by students from the University of the Cordilleras, College of Criminal Justice Education, as part of an academic initiative in forensic education.
             </p>
           </div>
 
-          {/* UC Logo Placeholder */}
-          <div className="w-40 h-40 bg-gray-100 rounded-2xl flex items-center justify-center shrink-0">
-            <span className="text-gray-400 text-xs text-center">UC Logo</span>
-          </div>
+          {/* Right Side - 50% with two logo cards */}
+          <div className="w-1/2 flex gap-4">
+            {/* UC Logo */}
+            <div className="flex-1 bg-gray-100 rounded-2xl flex items-center justify-center p-6">
+              <Image
+                src="/images/uc_logo.png"
+                alt="University of the Cordilleras Logo"
+                width={160}
+                height={160}
+                className="object-contain"
+              />
+            </div>
 
-          {/* CCJE Logo Placeholder */}
-          <div className="w-40 h-40 bg-gray-100 rounded-2xl flex items-center justify-center shrink-0">
-            <span className="text-gray-400 text-xs text-center">CCJE Logo</span>
+            {/* CCJE Logo */}
+            <div className="flex-1 bg-gray-100 rounded-2xl flex items-center justify-center p-6">
+              <Image
+                src="/images/ccje_logo.png"
+                alt="College of Criminal Justice Education Logo"
+                width={160}
+                height={160}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
