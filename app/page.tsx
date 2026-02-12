@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="h-screen overflow-hidden bg-white">
+    <div className="min-h-screen bg-white">
       {/* Main Container - Full Screen */}
-      <main className="h-full flex flex-col">
+      <main className="flex flex-col">
         {/* Blue Section - 70% of screen */}
         <div className="h-[70vh] rounded-3xl mx-4 mt-4" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
           {/* Header/Navigation */}
@@ -96,6 +96,80 @@ export default function Home() {
                   height="160"
                   className="object-contain max-w-full h-auto"
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Us Section */}
+        <section className="px-4 py-2 bg-white">
+          {/* About Us Title */}
+          <h2 className="text-4xl font-bold text-white text-center mb-4 p-2 py-3 rounded-3xl" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>About Us</h2>
+          <div className="rounded-3xl p-12" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+            
+            {/* Content Grid */}
+            <div className="flex gap-8">
+              {/* Left Side - What we Do */}
+              <div className="w-[45%]">
+                <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 h-full border border-white/20">
+                  <h3 className="text-2xl font-bold text-white mb-6">What we Do</h3>
+                  <div className="space-y-4 text-white/90 text-sm leading-relaxed">
+                    <p>
+                      VirCads is an academic virtual cadaver autopsy simulator developed as an educational initiative to support forensic science and criminal justice instruction. The platform is designed to help students understand and apply standard medico-legal procedures through a structured, step-by-step simulation of a postmortem examination.
+                    </p>
+                    <p>
+                      By combining guided workflows, injury classification exercises, and decision checkpoints, VirCads reinforces proper documentation, analytical reasoning, and forensic judgment in a safe and controlled learning environment. The simulation is intended to complement classroom lectures and laboratory instruction, providing learners with opportunities for repeated practice without exposure to ethical, logistical, or safety constraints associated with real cases.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Side - Three Features with Checkmarks */}
+              <div className="w-[55%] flex flex-col gap-6">
+                {/* Feature 1 */}
+                <div className="flex gap-6 items-start">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-white mb-2">Support forensic education through structured simulation</h4>
+                    <p className="text-white/80 text-sm leading-relaxed">
+                      To provide students with a detailed, step-by-step postmortem examination workflow that aligns with standard medico-legal protocols and classroom instruction.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 2 */}
+                <div className="flex gap-6 items-start">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-white mb-2">Improve injury recognition and forensic reasoning</h4>
+                    <p className="text-white/80 text-sm leading-relaxed">
+                      To help learners accurately identify, classify, and interpret injuries while understanding their medico-legal significance.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="flex gap-6 items-start">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-white mb-2">Promote ethical and safe learning environments</h4>
+                    <p className="text-white/80 text-sm leading-relaxed">
+                      To enable repeated practice and decision-making in a controlled, respectful, and non-harmful setting without reliance on real or identifiable cases.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
