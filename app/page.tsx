@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -43,9 +44,12 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
-                <button className="flex items-center justify-center gap-2 bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors text-sm sm:text-base">
+                <Link
+                  href="https://vircads-game.vercel.app/"
+                  className="flex items-center justify-center gap-2 bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors text-sm sm:text-base"
+                >
                   <span className="text-xl">▶</span> Start Simulation
-                </button>
+                </Link>
                 <button className="flex items-center justify-center gap-2 border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors text-sm sm:text-base">
                   <span className="text-xl">📖</span> Learn More
                 </button>
