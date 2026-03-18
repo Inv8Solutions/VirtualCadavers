@@ -449,10 +449,14 @@ export default function Home() {
                 VirCads is designed for academic use, allowing students to practice postmortem procedures, interpret injuries, and make informed forensic decisions in a structured learning environment.
               </p>
               
-              <button className="text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base lg:text-lg transition-colors inline-flex items-center gap-2 sm:gap-3 shadow-lg" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+              <Link
+                href="https://vircads-game.vercel.app/"
+                className="text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base lg:text-lg transition-colors inline-flex items-center gap-2 sm:gap-3 shadow-lg"
+                style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}
+              >
                 <span className="text-2xl">▶</span>
                 Begin Your First Autopsy Now
-              </button>
+              </Link>
               
               <p className="text-yellow-100 text-sm mt-6">
                 ✨ No signup required • Start immediately • 100% free
