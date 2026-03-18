@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import prepImage from './images/prep.png';
+import externalImage from './images/external.png';
+import injuryIdentificationImage from './images/injuryIdentification.png';
+import internalImage from './images/internal.png';
+import causeImage from './images/cause.png';
+import performanceImage from './images/performance.png';
 
 export default function Home() {
   return (
@@ -186,7 +192,15 @@ export default function Home() {
 
         {/* How the Simulation Works Section */}
         <section className="px-4 py-8 bg-white">
-          <div className="rounded-3xl p-6 sm:p-8 lg:p-12" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
+          <div
+            className="rounded-3xl p-6 sm:p-8 lg:p-12"
+            style={{
+              backgroundImage: "linear-gradient(to right, rgba(31, 78, 216, 0.28), rgba(11, 31, 59, 0.32)), url('/images/Rectangle 5.png')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
             {/* Badge and Title */}
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-blue-500/30 border border-blue-300/50 rounded-full px-4 py-2 mb-6">
@@ -203,69 +217,93 @@ export default function Home() {
             {/* Grid of 6 Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {/* Card 1: Preparation and PPE */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    Preparation Scene
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${prepImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Preparation and PPE</h3>
-                <p className="text-white/70 text-sm">Proper safety protocols and equipment preparation</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">Preparation and PPE</h3>
+                <p className="text-white/70 text-lg">Proper safety protocols and equipment preparation</p>
               </div>
 
               {/* Card 2: External examination */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    External Exam
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${externalImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">External examination</h3>
-                <p className="text-white/70 text-sm">Systematic external body assessment</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">External examination</h3>
+                <p className="text-white/70 text-lg">Systematic external body assessment</p>
               </div>
 
               {/* Card 3: Injury identification */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    Injury Classification
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${injuryIdentificationImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Injury identification</h3>
-                <p className="text-white/70 text-sm">Classification of contusions, abrasions, lacerations</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">Injury identification</h3>
+                <p className="text-white/70 text-lg">Classification of contusions, abrasions, lacerations</p>
               </div>
 
               {/* Card 4: Internal examination */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    Internal Exam
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${internalImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Internal examination</h3>
-                <p className="text-white/70 text-sm">Structured internal organ examination procedures</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">Internal examination</h3>
+                <p className="text-white/70 text-lg">Structured internal organ examination procedures</p>
               </div>
 
               {/* Card 5: Cause and manner analysis */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    Analysis Document
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${causeImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Cause and manner analysis</h3>
-                <p className="text-white/70 text-sm">Determination of death cause and manner</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">Cause and manner analysis</h3>
+                <p className="text-white/70 text-lg">Determination of death cause and manner</p>
               </div>
 
               {/* Card 6: Performance review */}
-              <div className="bg-blue-900/30 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/30 transition-all">
-                <div className="bg-white rounded-xl p-3 mb-4 aspect-video flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 font-semibold">
-                    Quiz Review
-                  </div>
+              <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-4 border border-white hover:border-white/30 transition-all">
+                <div
+                  className="rounded-xl mb-4 aspect-video overflow-hidden border border-white/20"
+                  style={{
+                    backgroundImage: `url(${performanceImage.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">Performance review</h3>
-                <p className="text-white/70 text-sm">Assessment of procedural accuracy</p>
+                <h3 className="text-white font-bold text-base sm:text-xl mb-2">Performance review</h3>
+                <p className="text-white/70 text-lg">Assessment of procedural accuracy</p>
               </div>
             </div>
           </div>
