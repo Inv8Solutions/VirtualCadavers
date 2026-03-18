@@ -16,7 +16,7 @@ export default function Home() {
         <div className="min-h-[70vh] md:h-[70vh] rounded-3xl mx-3 sm:mx-4 mt-3 sm:mt-4" style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}>
           {/* Header/Navigation */}
           <header className="flex flex-wrap items-center justify-between gap-3 px-4 sm:px-6 lg:px-10 py-4 sm:py-6">
-            <div className="text-xl sm:text-2xl font-bold" style={{ backgroundImage: 'linear-gradient(to right, #FFB900, #705100)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>Vircads</div>
+            <div className="text-xl sm:text-[32px] font-bold text-white">Vircads</div>
             <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm lg:text-base">
               <a href="#about" className="text-white hover:text-blue-100 transition-colors">
                 About
