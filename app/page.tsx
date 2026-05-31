@@ -450,14 +450,23 @@ export default function Home() {
               </p>
               
               <Link
-                href="https://vircads-game.vercel.app/"
+                href="https://vircads1.vercel.app/"
                 className="text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base lg:text-lg transition-colors inline-flex items-center gap-2 sm:gap-3 shadow-lg"
                 style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}
               >
                 <span className="text-2xl">▶</span>
-                Begin Your First Autopsy Now
+                Try the Postmortem Simulation Now
               </Link>
-              
+
+
+               <Link
+                href="https://vircads2.vercel.app/"
+                className="text-white ml-16 px-6 sm:px-10 py-4 sm:py-4 rounded-xl font-semibold text-sm sm:text-base lg:text-lg transition-colors inline-flex items-center gap-2 sm:gap-3 shadow-lg"
+                style={{ background: 'linear-gradient(to right, #1f4ed8, #0b1f3b)' }}
+              >
+                <span className="text-2xl">▶</span>
+                Try the Autopsy Simulation Now
+              </Link>
               <p className="text-yellow-100 text-sm mt-6">
                 ✨ No signup required • Start immediately • 100% free
               </p>
